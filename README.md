@@ -1,6 +1,8 @@
 # ARDetector
 
 [![Join the chat at https://gitter.im/alexruperez/ARDetector](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexruperez/ARDetector?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+[![Join the chat at https://gitter.im/alexruperez/ARDetector](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexruperez/ARDetector?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Twitter](http://img.shields.io/badge/contact-@alexruperez-blue.svg?style=flat)](http://twitter.com/alexruperez)
 [![GitHub Issues](http://img.shields.io/github/issues/alexruperez/ARDetector.svg?style=flat)](http://github.com/alexruperez/ARDetector/issues)
 [![CI Status](http://img.shields.io/travis/alexruperez/ARDetector.svg?style=flat)](https://travis-ci.org/alexruperez/ARDetector)
