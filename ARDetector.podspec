@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "ARDetector"
   s.version          = "0.1.0"
-  s.summary          = "CIDetector, AVCaptureVideoDataOutput and AVCaptureMetadataOutput categories. With face, rectangle, QR Code and the future text CIDetector and blocks for AVCaptureOutput handling."
+  s.summary          = "CIDetector and AVCaptureOutput categories. With face, rectangle, QR Code and text CIDetector and blocks."
   s.homepage         = "https://github.com/alexruperez/ARDetector"
   s.screenshots     = "https://raw.githubusercontent.com/alexruperez/ARDetector/master/screenshot.jpg"
   s.license          = 'MIT'
