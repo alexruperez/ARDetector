@@ -1,6 +1,0 @@
-framework module ARDetector {
-  umbrella header "Pods-Example-ARDetector-umbrella.h"
-
-  export *
-  module * { export * }
-}

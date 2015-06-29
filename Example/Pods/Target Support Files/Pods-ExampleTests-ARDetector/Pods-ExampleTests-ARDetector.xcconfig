@@ -1,1 +1,0 @@
-PODS_EXAMPLETESTS_ARDETECTOR_OTHER_LDFLAGS = -framework "CoreImage" -framework "UIKit"

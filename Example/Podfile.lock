@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ARDetector: 060ffcf5c698565d6234378035a67059479fd2ef
+  ARDetector: de05fb77b51b02bd3ff233e226f63eb37f3f8fc5
 
 COCOAPODS: 0.37.2
