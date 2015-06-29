@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ARDetector.svg?style=flat)](http://cocoapods.org/pods/ARDetector)
 [![License](https://img.shields.io/cocoapods/l/ARDetector.svg?style=flat)](http://cocoapods.org/pods/ARDetector)
 [![Platform](https://img.shields.io/cocoapods/p/ARDetector.svg?style=flat)](http://cocoapods.org/pods/ARDetector)
-[![Dependency Status](https://www.versioneye.com/user/projects/555b039a634daacd4100019b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/555b039a634daacd4100019b)
+[![Dependency Status](https://www.versioneye.com/user/projects/5591777d3965610029000216/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5591777d3965610029000216)
 [![Analytics](https://ga-beacon.appspot.com/UA-55329295-1/UILabel-AutomaticWriting/readme?pixel)](https://github.com/igrigorik/ga-beacon)
 
 ## Overview
