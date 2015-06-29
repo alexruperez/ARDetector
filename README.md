@@ -14,7 +14,7 @@
 
 CIDetector, AVCaptureVideoDataOutput and AVCaptureMetadataOutput categories. With face, rectangle, QR Code and the future text CIDetector and blocks for AVCaptureOutput handling.
 
-![ARDetector Screenshot](https://raw.githubusercontent.com/alexruperez/ARDetector/master/screenshot.jpg)
+<img src="https://raw.githubusercontent.com/alexruperez/ARDetector/master/screenshot.jpg" width="320">
 
 ### Installation
 
