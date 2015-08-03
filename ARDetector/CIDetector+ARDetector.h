@@ -38,7 +38,7 @@ typedef NS_ENUM(NSUInteger, ARImageOrientation)
 
 + (nonnull CIDetector *)QRCodeDetectorWithAccuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize;
 
-+ (nonnull CIDetector *)textDetectorWithAccuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize;
++ (nonnull CIDetector *)textDetectorWithAccuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize returnSubFeatures:(BOOL)returnSubFeatures;
 
 + (nonnull CIDetector *)faceDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize;
 
@@ -46,7 +46,7 @@ typedef NS_ENUM(NSUInteger, ARImageOrientation)
 
 + (nonnull CIDetector *)QRCodeDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize;
 
-+ (nonnull CIDetector *)textDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize;
++ (nonnull CIDetector *)textDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize returnSubFeatures:(BOOL)returnSubFeatures;
 
 - (nonnull NSArray *)featuresInUIImage:(nonnull UIImage *)image imageOrientation:(ARImageOrientation)imageOrientation eyeBlink:(BOOL)eyeBlink smile:(BOOL)smile focalLength:(nullable NSNumber *)focalLength aspectRatio:(nullable NSNumber *)aspectRatio;
 

@@ -28,29 +28,29 @@
     return [self QRCodeDetectorWithContext:self.sharedContext accuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize];
 }
 
-+ (nonnull CIDetector *)textDetectorWithAccuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize
++ (nonnull CIDetector *)textDetectorWithAccuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize returnSubFeatures:(BOOL)returnSubFeatures
 {
-    return [self textDetectorWithContext:self.sharedContext accuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize];
+    return [self textDetectorWithContext:self.sharedContext accuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize returnSubFeatures:returnSubFeatures];
 }
 
 + (nonnull CIDetector *)faceDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize
 {
-    return [self faceDetectorWithContext:context options:[self optionsWithAccuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize]];
+    return [self faceDetectorWithContext:context options:[self optionsWithAccuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize returnSubFeatures:NO]];
 }
 
 + (nonnull CIDetector *)rectangleDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize
 {
-    return [self rectangleDetectorWithContext:context options:[self optionsWithAccuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize]];
+    return [self rectangleDetectorWithContext:context options:[self optionsWithAccuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize returnSubFeatures:NO]];
 }
 
 + (nonnull CIDetector *)QRCodeDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize
 {
-    return [self QRCodeDetectorWithContext:context options:[self optionsWithAccuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize]];
+    return [self QRCodeDetectorWithContext:context options:[self optionsWithAccuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize returnSubFeatures:NO]];
 }
 
-+ (nonnull CIDetector *)textDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize
++ (nonnull CIDetector *)textDetectorWithContext:(nullable CIContext *)context accuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize returnSubFeatures:(BOOL)returnSubFeatures
 {
-    return [self textDetectorWithContext:context options:[self optionsWithAccuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize]];
+    return [self textDetectorWithContext:context options:[self optionsWithAccuracy:accuracy tracking:tracking minFeatureSize:minFeatureSize returnSubFeatures:returnSubFeatures]];
 }
 
 - (nonnull NSArray *)featuresInUIImage:(nonnull UIImage *)image imageOrientation:(ARImageOrientation)imageOrientation eyeBlink:(BOOL)eyeBlink smile:(BOOL)smile focalLength:(nullable NSNumber *)focalLength aspectRatio:(nullable NSNumber *)aspectRatio
@@ -122,7 +122,7 @@
     return orientation;
 }
 
-+ (nonnull NSDictionary *)optionsWithAccuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize
++ (nonnull NSDictionary *)optionsWithAccuracy:(ARDetectorAccuracy)accuracy tracking:(BOOL)tracking minFeatureSize:(nullable NSNumber *)minFeatureSize returnSubFeatures:(BOOL)returnSubFeatures
 {
     NSMutableDictionary *options = NSMutableDictionary.new;
     
@@ -141,6 +141,8 @@
     {
         options[CIDetectorMinFeatureSize] = minFeatureSize;
     }
+    
+    options[@"CIDetectorReturnSubFeatures"] = @(returnSubFeatures);
     
     return options.copy;
 }
