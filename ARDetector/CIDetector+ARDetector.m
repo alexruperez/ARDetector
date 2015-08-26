@@ -83,7 +83,7 @@
 + (nonnull CIDetector *)textDetectorWithContext:(nullable CIContext *)context options:(nonnull NSDictionary *)options
 {
     NSAssert(NSClassFromString(@"CITextFeature"), @"CITextFeature not available!");
-    return [self detectorOfType:@"CITextFeature" context:context options:options];
+    return [self detectorOfType:@"CIDetectorTypeText" context:context options:options];
 }
 
 #pragma mark - PRIVATE
